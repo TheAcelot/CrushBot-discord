@@ -29,6 +29,7 @@ async def delete(ctx):
 		except:
 			print('FALIED!')
 @bruh.command()
+@commands.is_owner()
 async def delroles(ctx):
 	for role in ctx.guild.roles:
 		try:
